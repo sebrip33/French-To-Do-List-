@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Liste de choses à faire</title>
+        <link rel="stylesheet" href="to-do.css">
+        <script src="to_do.js"></script>
+    </head>
+    <body>
+        <div id="todo-app">
+            <h1>To-do List</h1>
+            <form id="add-todo"> <!--création du formulaire-->
+                <input type="text" id="new-todo" placeholder="Ajouter une tâche">
+                <button type="submit">Ajouter</button> <!--création du bouton-->
+            </form>
+            <div id="filter-buttons">
+                <button data-filter="All">All</button>
+                <button data-filter="completed">Completed</button>
+                <button data-filter="active">Active</button>
+            </div>
+            <ul id="todo-list"> <!--création de la liste-->
+                <li class="completed hide">
+                    <input type="checkbox">
+                    <button>x</button>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>
